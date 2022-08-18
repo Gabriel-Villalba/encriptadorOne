@@ -46,7 +46,13 @@ const validarTexto=(input)=>{//validar minusculas
 La letra "i" es convertida para "imes"
 La letra "a" es convertida para "ai"
 La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"*/
+La letra "u" es convertida para "ufat"
+const nombres = ["Diego", "Marcos", "Alejandra"];
+const nombresMayusculas = nombres.map((nombre) => {
+    return nombre[0].toUpperCase() + nombre.substring(1);
+});
+console.log(nombresMayusculas);
+*/
 textoEntrada.addEventListener('keyup', validarTexto)//validamos cada tecla ingresada
 
  
