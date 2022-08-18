@@ -1,0 +1,260 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+  body{
+    margin: 0;
+    font-family: monospace;
+    background-color:#DBDFE8
+  }
+  h1{
+    text-align: center;
+  }
+ .contenedor{
+    width: 900%;
+    margin: auto;
+    max-width: 1000px;
+    background-color: #c6ccdc;
+    border: 2px, solid, black;
+    
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+
+ }
+ 
+  .imagenA{
+    width: 20%;
+  }
+  
+  .imagen {
+    width: 90%;
+  }
+
+
+  .botonAzul{
+    height: 40px;
+    width: 280px;
+    left: 24px;
+    top: 24px;
+    border-radius: 10px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #0A3871;
+    color: #ffffff;
+    margin: 30px;
+    cursor: pointer;
+    flex:1 1 30%;
+    align-self:center;
+  }
+  
+  .botonBlanco{
+    height: 40px;
+    width: 280px;
+    left: 24px;
+    top: 24px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background-color: #DBDFE8;
+    color: #0A3871;
+    margin:30px;
+    cursor: pointer;
+    flex:1 1 30%;
+    align-self:center;
+  }
+  .btnCopiar{
+    cursor : pointer;
+    height: 40px;
+    width: 250px;
+    left: 24px;
+    top: 24px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background-color: #DBDFE8;
+    color: #0A3871;
+
+  }
+  .botonBlanco:hover {
+   box-shadow: 30px 0 30px   #99a2b6;
+  }
+
+  .botonAzul:hover {
+    box-shadow: 30px 0 30px #5c789b;
+  }
+  .btnCopiar:hover {
+    box-shadow: 30px 0 30px  #99a2b6;
+   }
+ /* textarea{
+    width:586px;
+    height:322px;
+    border: 2px solid #990000;
+  }*/
+  .texto{
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    background-color: #c8cbd4 ;
+   /* flex-basis: 50 rem;*/
+    height: 350px;;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: none;
+	  border-radius: 10px;
+
+  }
+
+  .texto2{
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    background-color: #c8cbd4;
+    width: 95%;
+    font-size: 20px;
+    margin-bottom: auto;
+    padding-left:auto;
+    border: none;
+	  border-radius: 10px;
+  }
+
+  .texto{
+    margin:10px;
+  }
+  
+  .imagenA{
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+  }
+  .textIncorrecto{
+    background-color: rgb(235, 57, 57);
+    color: white;
+    margin-bottom: 0px;
+    font-size : 20px;
+    display: block;
+  }
+  .textCorrecto{
+    display: none;
+  }
+  .item{
+    flex-grow: 2;
+    flex:1 1 70%;
+  }
+  .item2{
+    flex:1 1 30%;
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    align-items:center;
+  }
+  .item3{
+    flex-grow: 1;
+    flex-basis: 100%;
+
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+    justify-content: ;
+    align-items:center;
+  }
+  .imgMunieco{
+    width: 50%;
+  }
+  .footer{
+    width: 100%;
+    background-color: #5c789b;
+    color: azure;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  @media(max-width: 767px){
+    .contenedor{
+      width: 100%;
+      margin: auto;
+      max-width: 1000px;
+      background-color: #c6ccdc;
+      border: 2px, solid, black;
+      
+      display: flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items:center;
+  
+   }
+   .item{
+    order:1;
+   }
+   .item2{
+    order:3;
+   }
+   
+  .item3{
+    order:2;
+    flex-direction: row;
+    align-content:center;
+    margin: 2px;
+   }
+   .footer{
+    order:4;
+   }
+   .texto{
+    width: 95%;
+    height: 120px;
+    margin: 10px;
+    background-color: #c6ccdc;;
+   }
+   .texto2{
+    width: 95%;
+    height: 120px;
+    margin: 10px;
+   }
+   .imgMunieco{
+    display: none;
+   }
+   .footer{
+      width: 95%;
+      margin: 5px;
+      background-color: #5c789b;
+      color: azure;
+      font-size: 15px;
+      text-align: center;
+  }
+  .botonBlanco{
+    width: 120px;
+    margin: auto;
+    align-self:center;
+  }
+  .botonAzul{ 
+    width: 120px;
+    margin: auto;
+    align-self:center;
+  }
+  }
