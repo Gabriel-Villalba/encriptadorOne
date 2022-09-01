@@ -9,7 +9,7 @@ const expresiones= /^[a-z ]*$/;
 
 const validarTexto=(input)=>{//validar minusculas
       let textValue= input.target.value;
-      console.log(textValue);
+    
       if(expresiones.test(textValue[textValue.length-1])){
         document.getElementById ('etiqueta').classList.remove('textIncorrecto');
         document.getElementById ('etiqueta').classList.add('textCorrecto');
@@ -46,17 +46,20 @@ const validarTexto=(input)=>{//validar minusculas
 La letra "i" es convertida para "imes"
 La letra "a" es convertida para "ai"
 La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-const nombres = ["Diego", "Marcos", "Alejandra"];
-const nombresMayusculas = nombres.map((nombre) => {
-    return nombre[0].toUpperCase() + nombre.substring(1);
-});
-console.log(nombresMayusculas);
-*/
+La letra "u" es convertida para "ufat"*/
 textoEntrada.addEventListener('keyup', validarTexto)//validamos cada tecla ingresada
 
+
+//Función para copiar el texto encriptado
+function copiarTexto() {
+  navigator.clipboard.writeText(document.getElementById("textoSalida.value").value);
  
-  formulario.addEventListener('click',(e)=>{   
+  document.getElementById("textoSalida").value = "";
+}
+
+//Función para desencriptar el texto
+ 
+  formulario.addEventListener('click',()=>{   
 
       botonEncriptar.onclick=()=>{
         if(textoEntrada.value == ""){
@@ -70,15 +73,7 @@ textoEntrada.addEventListener('keyup', validarTexto)//validamos cada tecla ingre
         } 
       } 
         
-      botonCopiar.onclick= ()=>{
-        if(textoSalida.value ==""){
-            alert("El campo esta vacio")
-        }else {
-          textoEntrada.value=textoSalida.value;
-          textoSalida.value = "";
-        }
-        
-      }
+     
 
       botonDesencriptar.onclick=()=>{
           if(textoEntrada.value ==""){
@@ -89,4 +84,11 @@ textoEntrada.addEventListener('keyup', validarTexto)//validamos cada tecla ingre
           }
          
       }
+
+     botonCopiar.onclick=()=>{
+
+        copiarTexto()
+      }
+
+      
   } )     

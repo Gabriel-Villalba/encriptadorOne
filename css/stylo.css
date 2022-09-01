@@ -1,13 +1,11 @@
 *{
   box-sizing: border-box;
 }
-
-
-
   body{
     margin: 0;
     font-family: monospace;
-    background-color:#DBDFE8
+    background-color:#DBDFE8;
+    
   }
   h1{
     text-align: center;
@@ -16,8 +14,8 @@
     width: 900%;
     margin: auto;
     max-width: 1000px;
-    background-color: #c6ccdc;
-    border: 2px, solid, black;
+    background-color:#eee;;
+    border-radius: 10px;
     
     display: flex;
      flex-direction: row;
@@ -94,6 +92,7 @@
     color: #0A3871;
 
   }
+
   .botonBlanco:hover {
    box-shadow: 30px 0 30px   #99a2b6;
   }
@@ -113,7 +112,7 @@
     font-family: sans-serif;
     border: none;
     outline: none;
-    background-color: #c8cbd4 ;
+    background-color: #DBDFE8 ;
    /* flex-basis: 50 rem;*/
     height: 350px;;
     font-size: 20px;
@@ -121,6 +120,7 @@
     padding-left: 10px;
     border: none;
 	  border-radius: 10px;
+     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.2);
 
   }
 
@@ -128,13 +128,14 @@
     font-family: sans-serif;
     border: none;
     outline: none;
-    background-color: #c8cbd4;
+    background-color:#DBDFE8;
     width: 95%;
     font-size: 20px;
     margin-bottom: auto;
     padding-left:auto;
     border: none;
 	  border-radius: 10px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.2);
   }
 
   .texto{
